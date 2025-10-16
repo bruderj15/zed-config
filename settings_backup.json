@@ -1,0 +1,67 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "icon_theme": "Material Icon Theme",
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4"
+    },
+    "version": "2",
+    "default_open_ai_model": null,
+    "provider": {
+      "name": "openai",
+      "default_model": "gpt-3.5-turbo",
+      "available_models": []
+    }
+  },
+  "features": {
+    "copilot": false,
+    "edit_prediction_provider": "zed",
+    "show_copilot_suggestions": false
+  },
+  "base_keymap": "JetBrains",
+  "theme": "JetBrains Dark",
+  "ui_font_size": 16,
+  "buffer_font_size": 15.0,
+  "buffer_font_family": "DejaVu Sans Mono",
+  "autosave": "on_focus_change",
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+      "delay_ms": 500
+    }
+  },
+  "hour_format": "hour24",
+  "languages": {
+    "Haskell": {
+      "tab_size": 2,
+      "format_on_save": "off"
+    }
+  },
+  "language_overrides": {
+    "Rust": {
+      "inlay_hints": {
+        "enabled": true,
+        "show_type_hints": true,
+        "show_parameter_hints": true,
+        "show_other_hints": true
+      }
+    }
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "checkOnSave": {
+          "command": "clippy"
+        }
+      }
+    }
+  }
+}
