@@ -7,12 +7,26 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "tabs": {
+    "file_icons": false,
+    "git_status": false
+  },
+  "title_bar": {
+    "show_menus": true,
+    "show_branch_icon": true
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
   "show_edit_predictions": false,
   "features": {
     "edit_prediction_provider": "zed"
   },
   "icon_theme": "Material Icon Theme",
   "agent": {
+    "enable_feedback": false,
     "enabled": false,
     "default_model": {
       "provider": "copilot_chat",
@@ -26,7 +40,7 @@
   "theme": "JetBrains Dark",
   "ui_font_family": "JetBrains Mono",
   "ui_font_size": 15,
-  "buffer_font_size": 13.0,
+  "buffer_font_size": 14.0,
   "buffer_font_family": "Monaspace Neon",
   "autosave": "on_focus_change",
   "git": {
